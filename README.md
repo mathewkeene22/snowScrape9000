@@ -1,24 +1,8 @@
-# README
+## SnowScrape9000
+The end goal of this project is to have a centralized webpage that includes the recent snowfall data from all of the ski resorts you frequent. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Aspirations Include:
+- personalized dashboard with a user's favorite mountains
+- ability to add/remove/request mountains from a user's dashboard 
+- request email notifications and frequency of notifications
+- text notifications 
