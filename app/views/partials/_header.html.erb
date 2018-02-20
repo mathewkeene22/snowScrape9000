@@ -1,5 +1,5 @@
 <header role="banner">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -9,7 +9,7 @@
 				</button>
 			</div>
 			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav pull-right">
 					<% if user_signed_in? %>
 						<div class="navbar-right">
 							<p class="navbar-text">
@@ -19,7 +19,9 @@
 					<% end %>
 					<li><%= link_to "Sign up", new_user_registration_path %></li>
 					<li><%= link_to "Sign in", new_user_session_path %></li>
-					<li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+					<% if user_signed_in? %>
+						<li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+					<% end %>	
 				</ul>
 			</div>
 		</div>
